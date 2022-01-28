@@ -11,7 +11,9 @@ namespace SettingEditor
 			// To customize application configuration such as set high DPI settings or default font,
 			// see https://aka.ms/applicationconfiguration.
 			ApplicationConfiguration.Initialize();
-			Application.Run(new SettingEditor());
+			var settingEditor = new SettingEditor();
+			if (settingEditor.IsDisposed) { return; }
+			Application.Run(settingEditor);
 		}
 	}
 }

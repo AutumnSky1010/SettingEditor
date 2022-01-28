@@ -32,7 +32,11 @@ internal class SettingJson
 		using (var sr = new StreamReader(this.JsonPath))
 		{
 			string jsonString = sr.ReadToEnd();
-			BotSetting? botSetting = JsonSerializer.Deserialize<BotSetting>(jsonString, this._jsonSerializerOptions);
+			BotSetting? botSetting = new BotSetting();
+			if (!string.IsNullOrEmpty(jsonString))
+			{
+				botSetting = JsonSerializer.Deserialize<BotSetting>(jsonString, this._jsonSerializerOptions);
+			}
 			return botSetting is null ? new BotSetting() : botSetting;
 		}
 	}

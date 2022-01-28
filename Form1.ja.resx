@@ -81,6 +81,9 @@
   <data name="botPathBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>473, 23</value>
   </data>
+  <data name="botPathBox.Text" xml:space="preserve">
+    <value>未設定</value>
+  </data>
   <data name="guildIdBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 77</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="tokenBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>558, 23</value>
+  </data>
+  <data name="tokenBox.Text" xml:space="preserve">
+    <value>未設定</value>
   </data>
   <data name="guildIdLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -228,6 +234,9 @@
   <data name="gotiEmojiIdBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 23</value>
   </data>
+  <data name="gotiEmojiIdBox.Text" xml:space="preserve">
+    <value>:no_entry_sign:</value>
+  </data>
   <data name="gotiEmojiIdLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -249,11 +258,17 @@
   <data name="timeOutMessageBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>558, 23</value>
   </data>
+  <data name="timeOutMessageBox.Text" xml:space="preserve">
+    <value>おかわりおあごち</value>
+  </data>
   <data name="okawariEmojiIdBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 54</value>
   </data>
   <data name="okawariEmojiIdBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 23</value>
+  </data>
+  <data name="okawariEmojiIdBox.Text" xml:space="preserve">
+    <value>:no_entry_sign:</value>
   </data>
   <data name="votingTimeLimitSecondBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 83</value>

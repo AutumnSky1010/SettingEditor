@@ -6,7 +6,7 @@ public partial class SettingEditor : Form
 	private SettingJson _settingJson;
 	public SettingEditor()
 	{
-		InitializeComponent();
+		this.InitializeComponent();
 		this._textBoxes = new Dictionary<TextBox, Label>()
 		{
 			{ this.tokenBox, this.tokenLabel },
@@ -18,9 +18,30 @@ public partial class SettingEditor : Form
 		if (File.Exists("jsonPath.data"))
 		{
 			string jsonPath = File.ReadAllText("jsonPath.data");
+			if (!File.Exists(jsonPath))
+			{
+				jsonPath = this.ResetJsonPath();
+				if (string.IsNullOrEmpty(jsonPath)) { this.Close(); }
+				return;
+			}
 			this._settingJson = new SettingJson(jsonPath);
 			this.SetValue($@"{Path.GetDirectoryName(jsonPath)}\OkawariBot.exe");
 		}
+	}
+	private string ResetJsonPath()
+	{
+		MessageBox.Show("おかわりbotの設定ファイルが見つかりませんでした。\n設定ファイルを選択してください。");
+		var dialog = new OpenFileDialog() { Filter = "設定ファイル|settings.json" };
+		DialogResult result = dialog.ShowDialog();
+		if (!(result == DialogResult.OK))
+		{
+			return "";
+		}
+		if (!File.Exists(dialog.FileName))
+		{
+			this.ResetJsonPath();
+		}
+		return dialog.FileName;
 	}
 	private void SetValue(string botPath)
 	{
@@ -55,7 +76,7 @@ public partial class SettingEditor : Form
 		}
 		if (!File.Exists(this.botPathBox.Text))
 		{
-			MessageBox.Show("ここにボット本体はありません。設定し直してください。");
+			MessageBox.Show("ここにbot本体はありません。設定し直してください。");
 			return false;
 		}
 		return true;

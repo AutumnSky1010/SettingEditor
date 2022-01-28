@@ -186,6 +186,11 @@
             0,
             0});
 			this.automaticExtensionMinuteBox.Name = "automaticExtensionMinuteBox";
+			this.automaticExtensionMinuteBox.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
 			// 
 			// automaticExtensionTimeLabel
 			// 
@@ -221,6 +226,11 @@
             0,
             0});
 			this.votingTimeLimitSecondBox.Name = "votingTimeLimitSecondBox";
+			this.votingTimeLimitSecondBox.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
 			// 
 			// votingTimeLimitSecondLabel
 			// 
@@ -241,6 +251,7 @@
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
