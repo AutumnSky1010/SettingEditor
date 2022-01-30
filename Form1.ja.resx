@@ -58,9 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="openFileButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 23</value>
-  </data>
   <data name="openFileButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 23</value>
   </data>
@@ -81,9 +78,6 @@
   <data name="botPathLabel.Text" xml:space="preserve">
     <value>bot本体(OkawariBot.exe)のパス</value>
   </data>
-  <data name="botPathBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 23</value>
-  </data>
   <data name="botPathBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>473, 23</value>
   </data>
@@ -91,13 +85,13 @@
     <value>未設定</value>
   </data>
   <data name="guildIdBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 81</value>
+    <value>204, 77</value>
   </data>
   <data name="guildIdBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>558, 23</value>
   </data>
   <data name="tokenBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 52</value>
+    <value>204, 48</value>
   </data>
   <data name="tokenBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>558, 23</value>
@@ -133,28 +127,16 @@
     <value>トークン(絶対に公開しないでください)</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>820, 110</value>
+    <value>768, 110</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>必ず設定してください</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 128</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>820, 246</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>その他設定(コマンドでも変更できます。)</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>443, 120</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 15</value>
@@ -169,7 +151,7 @@
     <value>NoControl</value>
   </data>
   <data name="isAutomaticExtensionButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 170</value>
+    <value>6, 141</value>
   </data>
   <data name="isAutomaticExtensionButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 19</value>
@@ -181,7 +163,7 @@
     <value>おかわり勢が一人でもいたら自動延長をする</value>
   </data>
   <data name="setButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>678, 196</value>
+    <value>626, 131</value>
   </data>
   <data name="setButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 44</value>
@@ -196,7 +178,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 149</value>
+    <value>322, 120</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 15</value>
@@ -211,7 +193,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 149</value>
+    <value>248, 120</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 15</value>
@@ -220,13 +202,13 @@
     <value>分</value>
   </data>
   <data name="automaticExtensionSecondBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 141</value>
+    <value>273, 112</value>
   </data>
   <data name="automaticExtensionSecondBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 23</value>
   </data>
   <data name="automaticExtensionMinuteBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 141</value>
+    <value>204, 112</value>
   </data>
   <data name="automaticExtensionMinuteBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 23</value>
@@ -238,7 +220,7 @@
     <value>NoControl</value>
   </data>
   <data name="automaticExtensionTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 143</value>
+    <value>6, 114</value>
   </data>
   <data name="automaticExtensionTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 15</value>
@@ -247,7 +229,7 @@
     <value>自動延長する時間</value>
   </data>
   <data name="gotiEmojiIdBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 54</value>
+    <value>574, 54</value>
   </data>
   <data name="gotiEmojiIdBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 23</value>
@@ -262,7 +244,7 @@
     <value>NoControl</value>
   </data>
   <data name="gotiEmojiIdLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>458, 57</value>
+    <value>413, 57</value>
   </data>
   <data name="gotiEmojiIdLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 15</value>
@@ -271,7 +253,7 @@
     <value>「ごちそうさまでした」の絵文字ID</value>
   </data>
   <data name="timeOutMessageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 25</value>
+    <value>204, 25</value>
   </data>
   <data name="timeOutMessageBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>558, 23</value>
@@ -280,7 +262,7 @@
     <value>おかわりおあごち</value>
   </data>
   <data name="okawariEmojiIdBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 54</value>
+    <value>204, 54</value>
   </data>
   <data name="okawariEmojiIdBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 23</value>
@@ -289,7 +271,7 @@
     <value>:no_entry_sign:</value>
   </data>
   <data name="votingTimeLimitSecondBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 112</value>
+    <value>204, 83</value>
   </data>
   <data name="votingTimeLimitSecondBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 23</value>
@@ -299,9 +281,6 @@
   </data>
   <data name="votingTimeLimitSecondLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="votingTimeLimitSecondLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 114</value>
   </data>
   <data name="votingTimeLimitSecondLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 15</value>
@@ -333,56 +312,17 @@
   <data name="timeOutMessageLabel.Text" xml:space="preserve">
     <value>タイマー停止時に送信するTTSメッセージ</value>
   </data>
-  <data name="notificationSecondBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 83</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 128</value>
   </data>
-  <data name="notificationSecondBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>535, 23</value>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 181</value>
   </data>
-  <data name="notificationSecondBox.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="notificationSecondBox.Text" xml:space="preserve">
-    <value>10,30,60</value>
-  </data>
-  <data name="notificationLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="notificationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="notificationLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 86</value>
-  </data>
-  <data name="notificationLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 15</value>
-  </data>
-  <data name="notificationLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="notificationLabel.Text" xml:space="preserve">
-    <value>残り時間通知(秒,・・・,秒)(未入力で通知しない)</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>790, 91</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 15</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>秒</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>その他設定(コマンドでも変更できます。)</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>847, 386</value>
+    <value>792, 321</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

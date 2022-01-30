@@ -1,7 +1,7 @@
 ﻿
 using System.Text.Json.Serialization;
 namespace OkawariBot.Settings;
-public class BotSetting
+internal class BotSetting
 {
 	/// <summary>
 	/// botのトークン
@@ -38,14 +38,6 @@ public class BotSetting
 	/// </summary>
 	[JsonPropertyName("isAutomaticExtension")]
 	public bool IsAutomaticExtension { get; set; } = false;
-	/// <summary>
-	/// 自動延長をする時間
-	/// </summary>
 	[JsonPropertyName("automaticExtensionSecond")]
 	public int AutomaticExtensionSecond { get; set; } = 180;
-	/// <summary>
-	/// 通知をする時間
-	/// </summary>
-	[JsonPropertyName("notificationTimes")]
-	public List<int> NotificationTimes { get; set; } = new List<int>();
 }
