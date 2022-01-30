@@ -21,8 +21,11 @@ public partial class SettingEditor : Form
 			if (!File.Exists(jsonPath))
 			{
 				jsonPath = this.ResetJsonPath();
-				if (string.IsNullOrEmpty(jsonPath)) { this.Close(); }
-				return;
+				if (string.IsNullOrEmpty(jsonPath)) 
+				{
+					this.Close();
+					return;
+				}
 			}
 			this._settingJson = new SettingJson(jsonPath);
 			this.SetValue($@"{Path.GetDirectoryName(jsonPath)}\OkawariBot.exe");
@@ -56,6 +59,12 @@ public partial class SettingEditor : Form
 		this.automaticExtensionMinuteBox.Value = botSetting.AutomaticExtensionSecond / 60;
 		this.automaticExtensionSecondBox.Value = botSetting.AutomaticExtensionSecond % 60;
 		this.botPathBox.Text = botPath;
+		if (botSetting.NotificationTimes.Count == 0)
+		{
+			this.notificationSecondBox.Text = "";
+			return;
+		}
+		this.notificationSecondBox.Text = string.Join(',', botSetting.NotificationTimes);
 	}
 	private void setButton_Click(object sender, EventArgs e)
 	{
@@ -79,6 +88,11 @@ public partial class SettingEditor : Form
 			MessageBox.Show("ここにbot本体はありません。設定し直してください。");
 			return false;
 		}
+		if (!CSVSecond.IsAllInNumber(this.notificationSecondBox.Text) && this.notificationSecondBox.Text != "")
+		{
+			MessageBox.Show("通知する時間の書き方が違います。「秒,秒」のように通知したい時間の秒数をカンマ区切りで入力してください。");
+			return false;
+		}
 		return true;
 	}
 	private void Save()
@@ -94,6 +108,10 @@ public partial class SettingEditor : Form
 			okawariEmojiId = this.okawariEmojiIdBox.Text,
 			VotingTimeLimitSecond = (int)this.votingTimeLimitSecondBox.Value,
 		};
+		if (this.notificationSecondBox.Text != "")
+		{
+			setting.NotificationTimes = CSVSecond.Parse(this.notificationSecondBox.Text);
+		}
 		string jsonPath = $@"{Path.GetDirectoryName(this.botPathBox.Text)}\settings.json";
 		if (!File.Exists(jsonPath))
 		{
