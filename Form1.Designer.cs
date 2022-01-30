@@ -54,6 +54,9 @@
 			this.votingTimeLimitSecondLabel = new System.Windows.Forms.Label();
 			this.okawariEmojiIdLabel = new System.Windows.Forms.Label();
 			this.timeOutMessageLabel = new System.Windows.Forms.Label();
+			this.notificationSecondBox = new System.Windows.Forms.TextBox();
+			this.notificationLabel = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guildIdBox)).BeginInit();
 			this.groupBox2.SuspendLayout();
@@ -120,6 +123,9 @@
 			// groupBox2
 			// 
 			resources.ApplyResources(this.groupBox2, "groupBox2");
+			this.groupBox2.Controls.Add(this.label5);
+			this.groupBox2.Controls.Add(this.notificationLabel);
+			this.groupBox2.Controls.Add(this.notificationSecondBox);
 			this.groupBox2.Controls.Add(this.label1);
 			this.groupBox2.Controls.Add(this.isAutomaticExtensionButton);
 			this.groupBox2.Controls.Add(this.setButton);
@@ -247,6 +253,21 @@
 			resources.ApplyResources(this.timeOutMessageLabel, "timeOutMessageLabel");
 			this.timeOutMessageLabel.Name = "timeOutMessageLabel";
 			// 
+			// notificationSecondBox
+			// 
+			resources.ApplyResources(this.notificationSecondBox, "notificationSecondBox");
+			this.notificationSecondBox.Name = "notificationSecondBox";
+			// 
+			// notificationLabel
+			// 
+			resources.ApplyResources(this.notificationLabel, "notificationLabel");
+			this.notificationLabel.Name = "notificationLabel";
+			// 
+			// label5
+			// 
+			resources.ApplyResources(this.label5, "label5");
+			this.label5.Name = "label5";
+			// 
 			// SettingEditor
 			// 
 			resources.ApplyResources(this, "$this");
@@ -297,5 +318,8 @@
 		private Label botPathLabel;
 		private TextBox botPathBox;
 		private Label label1;
+		private Label notificationLabel;
+		private TextBox notificationSecondBox;
+		private Label label5;
 	}
 }
