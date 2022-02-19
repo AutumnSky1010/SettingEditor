@@ -38,6 +38,9 @@
 			this.guildIdLabel = new System.Windows.Forms.Label();
 			this.tokenLabel = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.notificationLabel = new System.Windows.Forms.Label();
+			this.notificationSecondBox = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.isAutomaticExtensionButton = new System.Windows.Forms.CheckBox();
 			this.setButton = new System.Windows.Forms.Button();
@@ -54,9 +57,6 @@
 			this.votingTimeLimitSecondLabel = new System.Windows.Forms.Label();
 			this.okawariEmojiIdLabel = new System.Windows.Forms.Label();
 			this.timeOutMessageLabel = new System.Windows.Forms.Label();
-			this.notificationSecondBox = new System.Windows.Forms.TextBox();
-			this.notificationLabel = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guildIdBox)).BeginInit();
 			this.groupBox2.SuspendLayout();
@@ -145,6 +145,21 @@
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.TabStop = false;
 			// 
+			// label5
+			// 
+			resources.ApplyResources(this.label5, "label5");
+			this.label5.Name = "label5";
+			// 
+			// notificationLabel
+			// 
+			resources.ApplyResources(this.notificationLabel, "notificationLabel");
+			this.notificationLabel.Name = "notificationLabel";
+			// 
+			// notificationSecondBox
+			// 
+			resources.ApplyResources(this.notificationSecondBox, "notificationSecondBox");
+			this.notificationSecondBox.Name = "notificationSecondBox";
+			// 
 			// label1
 			// 
 			resources.ApplyResources(this.label1, "label1");
@@ -231,6 +246,11 @@
             0,
             0,
             0});
+			this.votingTimeLimitSecondBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.votingTimeLimitSecondBox.Name = "votingTimeLimitSecondBox";
 			this.votingTimeLimitSecondBox.Value = new decimal(new int[] {
             30,
@@ -252,21 +272,6 @@
 			// 
 			resources.ApplyResources(this.timeOutMessageLabel, "timeOutMessageLabel");
 			this.timeOutMessageLabel.Name = "timeOutMessageLabel";
-			// 
-			// notificationSecondBox
-			// 
-			resources.ApplyResources(this.notificationSecondBox, "notificationSecondBox");
-			this.notificationSecondBox.Name = "notificationSecondBox";
-			// 
-			// notificationLabel
-			// 
-			resources.ApplyResources(this.notificationLabel, "notificationLabel");
-			this.notificationLabel.Name = "notificationLabel";
-			// 
-			// label5
-			// 
-			resources.ApplyResources(this.label5, "label5");
-			this.label5.Name = "label5";
 			// 
 			// SettingEditor
 			// 

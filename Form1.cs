@@ -90,6 +90,11 @@ public partial class SettingEditor : Form
 			MessageBox.Show("通知する時間の書き方が違います。「秒,秒」のように通知したい時間の秒数をカンマ区切りで入力してください。");
 			return false;
 		}
+		if (this.automaticExtensionSecondBox.Value + this.automaticExtensionMinuteBox.Value * 60 <= 0)
+		{
+			MessageBox.Show("自動延長の時間は一秒以上の値を指定してください。");
+			return false;
+		}
 		return true;
 	}
 	private void Save()
